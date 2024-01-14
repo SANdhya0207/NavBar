@@ -1,0 +1,201 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    .navbar{
+        background-color: rgb(136, 7, 7);
+        color: white;
+        padding: 10px;
+        font-size: larger;
+
+        @media screen and (max-width: 420px){
+            padding: 5px;
+            font-size: medium;
+        }
+        
+        .logo{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .content{
+            float: right;
+            margin-top: 20px;
+
+            .items{
+                margin: 10px;
+                cursor: pointer;
+                list-style: none;
+
+                @media screen and (max-width: 420px){
+                    margin: 2px;
+                }
+            }
+
+            .abt{
+                position: relative;
+                &:hover{
+                    .about{
+                        display: inline;
+                    }
+                }
+
+                .about{
+                    display: none;
+                    position: absolute;
+                    background-color: rgb(92, 3, 3);
+                    color: white;
+                    width: 20vw;
+                    height: 45vh;
+                    top: 25px;
+                    left: -70px;
+
+                    @media screen and (max-width: 768px){
+                        width: 40vw;
+                        height: 40vh;
+                        left: -60px;
+                    }
+
+                    @media screen and (max-width: 420px){
+                        width: 60vw;
+                        height: 40vh;
+                        left: -60px;
+                    }
+                    
+                    .profile{
+                        display: block;
+                        position: absolute;
+                        width: 100px;
+                        height: 120px;
+                        margin-top: 15vh;
+                    }
+
+                    .data{
+                        margin-left: 110px;
+                        position: absolute;
+                        text-align: start;
+                        float: right;
+                    }
+                }
+            }
+
+            .contact{
+                position: relative;
+                &:hover{
+                    .contactLists{
+                        display: block;
+                    }
+                }
+                .contactLists {
+                    text-align: center;
+                    display: none;
+                    top: 7px;
+                    position: absolute;
+                    width: 140px;
+                    height: 140px;
+                    right: -58px;
+                    background-color: rgb(92, 3, 3);
+                    color: white;
+                    padding: 10px;
+                    list-style: none;
+
+                    @media screen and (max-width:420px){
+                        height: 103px;
+                    }
+                }
+            }
+
+            .service{
+                position: relative;
+                &:hover{
+                    .serviceLinks{
+                        display: block;
+                    }
+                }
+                .serviceLinks {
+                        display: none;
+                        position: absolute;
+                        width: 9vw;
+                        height: 22vh;
+                        left: -50px;
+                        top: 6px;
+                        background-color: rgb(92, 3, 3);
+
+                        @media screen and (max-width: 768px){
+                            width: 16vw;
+                            height: 20vh;
+                        }    
+
+                        @media screen and (max-width: 420px){
+                            width: 26vw;
+                            height: 17vh;
+                            left: -55px;
+                        }
+
+                    .names{
+                        list-style: none;
+                        padding: 10px 10px 0px 10px;
+                        
+                    }
+
+                    .link{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
+            
+            .options{
+                position: relative;
+                &:hover{
+                    .optionLists{
+                        display: block;
+                    }
+                }
+                .arrow{
+                    width: 15px;
+                    height: 15px;
+                }
+                .optionLists {
+                    display: none;
+                    position: absolute;
+                    background-color: rgb(92, 3, 3);
+                    padding: 10px;
+                    left: -42px;
+                    top: 7px;
+
+                    .optionItem{
+                        list-style: none;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .text{
+        margin-top: 28vh;
+        text-align: center;
+        font-size: 100px;
+
+        @media screen and (max-width: 768px){
+            margin-top: 25vh;
+        }
+        
+        @media screen and (max-width: 420px){
+            font-size: 40px;
+        }
+    }
+
+    .footer{
+        margin-top: 24vh;
+        background-color: rgb(136, 7, 7);
+        color: white;
+        text-align: center;
+        font-size: large;
+        padding: 50px;
+
+        @media screen and (max-width: 768px){
+            margin-top: 20vh;
+        }
+    }
+}
